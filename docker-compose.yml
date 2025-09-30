@@ -2,16 +2,16 @@ services:
   db:
     image: postgres:16
     env_file:
-      - ./db.env           # ← secretos de Postgres (NO subir a Git)
+      - ./db.env          
     ports:
-      - "5433:5432"        # expone Postgres en localhost:5433
+      - "5433:5432"       
     volumes:
       - dbdata:/var/lib/postgresql/data
 
   api:
     build: ./backend
     env_file:
-      - ./backend/.env     # ← variables del backend (NO subir a Git)
+      - ./backend/.env    
     environment:
       # Solo variables NO sensibles y dependientes del compose:
       DB_HOST: db          # el backend se conecta al servicio "db"
