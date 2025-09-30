@@ -1,0 +1,7 @@
+body { font-family: system-ui, Arial, sans-serif; max-width: 700px; margin: 2rem auto; }
+form { display: flex; gap: .5rem; margin-bottom: 1rem; }
+input { padding: .4rem .6rem; }
+button { padding: .4rem .6rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: .4rem .6rem; text-align: left; }
+#msg { margin-left: .5rem; color: #0a7; }
